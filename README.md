@@ -8,7 +8,7 @@ A dynamic web application built with React that allows users to search for movie
 
 ## Live Demo
 
-Check out the live app: [React Movie App Demo](https://ubiquitous-jalebi-816e7a.netlify.app/)
+Check out the live app: [React Movie App Demo](https://reactmovieappbootstrap.netlify.app/)
 
 ## Features
 
