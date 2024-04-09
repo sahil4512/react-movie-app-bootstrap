@@ -1,6 +1,6 @@
 body {
-  background-color: #141414;
-  color: #ffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .movie-app > .row {
@@ -43,6 +43,7 @@ body {
   font-size: 20px;
   padding: 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 .mrgnrght {
