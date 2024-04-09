@@ -1,0 +1,89 @@
+body {
+  background-color: #141414;
+  color: #ffff;
+}
+
+.movie-app > .row {
+  overflow: auto;
+
+  flex-wrap: nowrap;
+}
+
+.movie-app > .row::-webkit-scrollbar {
+  display: none;
+}
+
+.row > * {
+  flex-shrink: inherit;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  transition: transform 0.2s;
+  max-width: 300px; /* Example max-width, adjust as needed */
+  margin: 0 auto; /* Centers the movie items if they don't take up all horizontal space */
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.mrgnrght {
+  margin-right: 10px;
+}
+
+/* Ensure that the favorites section takes up all available horizontal space */
+.favorites-section {
+  display: flex;
+}
+
+/* Individual movie items within the favorites section */
+.favorites-section .image-container {
+  flex-grow: 1; /* Allows movie items to grow and take available space */
+  max-width: 300px; /* Example max-width, adjust as needed */
+  margin: 0 auto; /* Centers the movie items if they don't take up all horizontal space */
+}
+
+/* Retaining the hover effect */
+.favorites-section .image-container:hover {
+  transform: scale(1.05); /* Adjust scale effect as you see fit */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert-enter {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.no-favourites-text {
+  color: #fff; /* Example color - adjust as needed */
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
